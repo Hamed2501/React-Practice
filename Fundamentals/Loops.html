@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+  let i = 0;
+    while (i < 3) { 
+      alert( i );
+      i++;
+    }
+    //shows 0, then 1, then 2
+
+
+    let i1 = 3;
+while (i1) { // when i becomes 0, the condition becomes falsy, and the loop stops
+  alert( i1 );
+  i1--;
+}
+//Curly braces are not required for a single-line body
+let i2 = 3;
+while (i2) alert(i2--);
+
+
+//While Do While..
+let k = 0;
+do {
+  alert( k );
+  k++;
+} 
+while (k < 3);
+
+
+//for Loop..
+for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+  alert(i);
+}
+
+//Breaking the loop..
+let sum = 0;
+
+while (true) {
+
+  let value = +prompt("Enter a number", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Sum: ' + sum );
+
+//Continue to the next iteration
+
+for (let i = 0; i < 10; i++) {
+
+// if true, skip the remaining part of the body
+if (i % 2 == 0) continue;
+
+alert(i); // 1, then 3, 5, 7, 9
+}
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
