@@ -1,0 +1,10 @@
+.EmpName {
+  text-align: center;
+}
+.formPadding {
+  padding: 10px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
